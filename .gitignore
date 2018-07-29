@@ -59,3 +59,13 @@ typings/
 
 # next.js build output
 .next
+
+# Mac DS Store
+.DS_Store
+.idea/Liri.iml
+.idea/markdown-navigator.xml
+.idea/markdown-navigator/profiles_settings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
