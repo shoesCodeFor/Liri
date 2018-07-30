@@ -31,9 +31,20 @@ Acceptable commands are:
    node liri.js my-tweets
    ```
 
-    *  ```spotify-this-song``` Ex. - ```node liri.js spotify-this-song Alien 8```
 
-    *  ```movie-this``` Ex. - ```node liri.js movie-this Milo and Otis```
+*spotify-this-song* Ex. -
+   ```bash
+   node liri.js spotify-this-song Alien 8
+   ```
 
-    *  `do-what-it-says` (no parameters) Ex. - `node liri.js do-what-it-says`
+
+*movie-this* Ex. -
+```bash
+node liri.js movie-this Milo and Otis
+```
+
+*do-what-it-says* (no parameters) Ex. - 
+```bash
+node liri.js do-what-it-says
+```
       NOTE: This command pulls requests from random.txt in this format: `spotify-this-song,"I Want it That Way"`
