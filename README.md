@@ -27,26 +27,33 @@ node liri.js <command> <paramters>
 ## Acceptable commands are: 
 
 *my-tweets* (no parameters) 
+
 Example - 
    ```bash
    node liri.js my-tweets
    ```
 
 
+
 *spotify-this-song* 
+
 Example -
    ```bash
    node liri.js spotify-this-song Alien 8
    ```
 
 
+
 *movie-this*
+
 Example -
 ```bash
 node liri.js movie-this Milo and Otis
 ```
 
+
 *do-what-it-says* (no parameters)
+
 Example -
 ```bash
 node liri.js do-what-it-says
