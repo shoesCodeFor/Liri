@@ -24,7 +24,7 @@ To launch the bot type
 node liri.js <command> <paramters>
 ```
 
-Acceptable commands are: 
+###Acceptable commands are: 
 
 *my-tweets* (no parameters) Ex. - 
    ```bash
