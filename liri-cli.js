@@ -1,5 +1,5 @@
 /**
- *      Liri JS - A simple Node CLI to access Spotify, Twitter and OMDB
+ *      Liri JS - A simple Node CLI to access Spotify, Twitter and OMDB with an Inquirer prompt
  *      By Schuyler Ankele - University of Denver Code Bootcamp Fall 2018 Cohort
  */
 
@@ -10,6 +10,8 @@ const keys = require('./keys.js');
 const Spotify = require('node-spotify-api');
 const Twitter = require('twitter');
 const request = require('request');
+const inquirer = require('inquirer');
+
 
 // Initialize the keys
 var spotifyClient = new Spotify(keys.spotify);
@@ -35,7 +37,7 @@ const myTweets = () => {
 
             }
         }
-        
+
     });
 };
 
@@ -84,7 +86,7 @@ const searchOMDB = (movieName = 'Mr. Nobody') => {
         console.log(`Plot: ${movieData.Plot}`);
         // Actors in the movie.
         console.log(`Actors: ${movieData.Actors}`);
-       
+
     });
 };
 

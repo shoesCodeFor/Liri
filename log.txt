@@ -1,0 +1,14 @@
+Input Log
+
+Command: my-tweets | Paramaters: N/A
+Input: node liri.js my-tweets
+
+Command: spotify-this-song | Paramaters: Alien 8
+Input: node liri.js spotify-this-song Alien 8
+
+Command: movie-this | Paramaters: Milo and Otis
+Input: node liri.js movie-this Milo and Otis
+
+Command: do-what-it-says | Paramaters: 
+Input: node liri.js do-what-it-says
+
