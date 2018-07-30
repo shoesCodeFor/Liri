@@ -20,14 +20,16 @@ To install dependencies run
    `npm install`
 
 To launch the bot type 
-   `node liri.js <command> <paramters>`
+```bash
+node liri.js <command> <paramters>
+```
 
 Acceptable commands are: 
-    *  `my-tweets` (no parameters) Ex. - `node liri.js my-tweets`
+    *  ```my-tweets``` (no parameters) Ex. - ```node liri.js my-tweets```
 
-    *  `spotify-this-song` Ex. - `node liri.js spotify-this-song Alien 8`
+    *  ```spotify-this-song``` Ex. - ```node liri.js spotify-this-song Alien 8```
 
-    *  `movie-this` Ex. - `node liri.js movie-this Milo and Otis`
+    *  ```movie-this``` Ex. - ```node liri.js movie-this Milo and Otis```
 
     *  `do-what-it-says` (no parameters) Ex. - `node liri.js do-what-it-says`
       NOTE: This command pulls requests from random.txt in this format: `spotify-this-song,"I Want it That Way"`
