@@ -5,11 +5,13 @@
 
 // Import dependencies
 require("dotenv").config();
+const API_Keys = require('./keys.js');
 const fs = require('fs');
-const keys = require('./keys.js');
 const Spotify = require('node-spotify-api');
 const Twitter = require('twitter');
 const request = require('request');
+
+const keys = new API_Keys();
 
 // Initialize the keys
 var spotifyClient = new Spotify(keys.spotify);

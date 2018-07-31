@@ -12,3 +12,6 @@ Input: node liri.js movie-this Milo and Otis
 Command: do-what-it-says | Paramaters: 
 Input: node liri.js do-what-it-says
 
+
+Command: do-what-it-says | Paramaters: N/A
+Input: /usr/local/bin/node /Users/Shoe/Documents/Github/Liri/liri.js do-what-it-says
