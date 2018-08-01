@@ -4,7 +4,7 @@ const spotifyClient = new Spotify(keys.spotify);
 
 class SpotifyToLog{
     constructor(){
-        this.spotifySearch = songName => {
+        this.songSearch = songName => {
             spotifyClient.search({ type: 'track', query: songName}, function(err, data) {
                 if (err) {
                     return console.log('Error occurred: ' + err);
