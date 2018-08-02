@@ -2,7 +2,7 @@ require("dotenv").config();
 const API_Keys = require('./keys.js');
 const keys = new API_Keys();
 const Twitter = require('twitter');
-var twitterClient = new Twitter(keys.twitter);
+const twitterClient = new Twitter(keys.twitter);
 
 class TwitterToLog{
     constructor(){
@@ -21,8 +21,10 @@ class TwitterToLog{
                         console.log('************ Date ***************');
                         console.log(tweets[i].created_at);
                         console.log("\n");
-
                     }
+                }
+                else{
+                    console.log(error);
                 }
 
             });
@@ -43,6 +45,9 @@ class TwitterToLog{
                         console.log("\n");
 
                     }
+                }
+                else{
+                    console.log(error);
                 }
 
             });
