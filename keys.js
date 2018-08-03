@@ -40,4 +40,7 @@ class TwitterAPI{
 
 
 
-module.exports = [SpotifyAPI, TwitterAPI];
+module.exports = {
+    SpotifyAPI: SpotifyAPI.key,
+    TwitterAPI: TwitterAPI
+};

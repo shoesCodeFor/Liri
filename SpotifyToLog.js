@@ -1,5 +1,7 @@
-const keys = new API_Keys();
-const spotifyClient = new Spotify(keys.spotify);
+require('./keys.js');
+const key = SpotifyAPI;
+const Spotify = require('node-spotify-api');
+const spotifyClient = new Spotify(key);
 
 
 class SpotifyToLog{
