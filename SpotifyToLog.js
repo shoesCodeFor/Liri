@@ -1,5 +1,8 @@
-require('./keys.js');
-const key = SpotifyAPI;
+require("dotenv").config();
+const key = {
+    id: process.env.SPOTIFY_ID,
+    secret: process.env.SPOTIFY_SECRET
+};
 const Spotify = require('node-spotify-api');
 const spotifyClient = new Spotify(key);
 
