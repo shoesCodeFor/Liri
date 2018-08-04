@@ -1,10 +1,14 @@
 require("dotenv").config();
-const API_Keys = require('./keys.js');
-const keys = new API_Keys();
+const key = {
+    consumer_key: process.env.TWITTER_CONSUMER_KEY,
+    consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
+    access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
+    access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
+};
 const Twitter = require('twitter');
-const twitterClient = new Twitter(keys.twitter);
+const twitterClient = new Twitter(key);
 
-class TwitterToLog{
+class TwitterAPI{
     constructor(){
         this.myTweets = () => {
             var params = {screen_name: 'schuylerHSR'};
@@ -55,6 +59,4 @@ class TwitterToLog{
     }
 }
 
-let test = new TwitterToLog();
-test.myTweets();
-module.exports = TwitterToLog;
+module.exports = TwitterAPI;
