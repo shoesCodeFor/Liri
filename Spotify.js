@@ -7,7 +7,7 @@ const SpotifyAPI = require('node-spotify-api');
 const spotifyClient = new SpotifyAPI(key);
 
 
-class SpotifyToLog{
+class Spotify{
     constructor(){
         this.songSearch = songName => {
             spotifyClient.search({ type: 'track', query: songName}, function(err, data) {
@@ -31,4 +31,4 @@ class SpotifyToLog{
     }
 }
 
-module.exports = SpotifyToLog;
+module.exports = Spotify;
